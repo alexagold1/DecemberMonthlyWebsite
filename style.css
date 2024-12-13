@@ -2,7 +2,7 @@ body {
   background-color: bisque;
 }
 h1 {
-  margin-top: 70px;
+  margin-top: 40px;
   font-family: "video", serif;
   font-weight: 500;
   font-style: normal;
@@ -57,5 +57,5 @@ p {
   }
 }
 .img {
-  width: 150px;
+  width: 85px;
 }

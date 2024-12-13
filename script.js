@@ -56,7 +56,7 @@ function genLastName (lastName){
 }
 //generate suffix 
 function genSuffix(favoriteAnimal){
-    return `of the ${favoriteAnimal}`
+    return `of the ${favoriteAnimal} team`
 }
 
 //master function to assemble full name
@@ -77,7 +77,22 @@ const MiddleName = genMiddleName(roadType, favoriteColor)
 const newLastName = genLastName(lastName)
 const newSuffix = genSuffix(favoriteAnimal)
 
+//functions to capitalize words
 
+const capitalizedPrefix = tocapitalize(prefix)
+const capitalizedFirstName = tocapitalize(newFirstName)
+const capitalizedMiddleName = tocapitalize(MiddleName)
+const capitalizedLastName = tocapitalize(newLastName)
+const capitalizednewSuffix = tocapitalize(newSuffix)
 
+const fullName = `${capitalizedPrefix} ${capitalizedFirstName} ${capitalizedMiddleName} ${capitalizedLastName} ${capitalizednewSuffix}`
 
+document.getElementById('result').textContent = fullName
+
+}
+
+//capitalizer function
+function tocapitalize(word)
+{
+return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
 }
