@@ -1,11 +1,11 @@
 //Generate Prefix of name
 function genPrefix (firstName){
  if (firstName.length > 4){
-    return 'The Great'
- }
+    return 'The Great Goalie:'
+ } 
  else {
-    return 'Master'
- }
+    return 'The Amazing Quarterback:'
+ } 
 }
 
 //Generate First name of name
@@ -20,20 +20,20 @@ function genFirstName (firstName){
   }  else if  (firstLetter === 'd'){
     return 'Dom'
   } else {
-    return 'zach'
+    return 'Zach'
   }
 }
 
 //generate middle name 
 function genMiddleName (roadType, favoriteColor){
     if (roadType === 'road'){
-        return `${favoriteColor} ridge`
+        return `${favoriteColor} "sick"`
     } else if (roadType === 'street'){
-        return `${favoriteColor} son`
+        return `${favoriteColor} "stellar"`
     }  else if (roadType === 'ave'){
-        return `${favoriteColor} field`
+        return `${favoriteColor} "cold"`
     }  else {
-        return `${favoriteColor} stone`
+        return `${favoriteColor} "stone"`
     }
 }
 
@@ -41,17 +41,17 @@ function genMiddleName (roadType, favoriteColor){
 function genLastName (lastName){
     const lastLetter = lastName.charAt(lastName.length-1).toLowerCase()
     if (lastLetter ==='a'){
-        return 'Shadow'
+        return 'Cohen'
     } else if (lastLetter === 'e'){
-        return 'Storm'
+        return 'Smith'
     } else if (lastLetter === 'i'){
-        return 'Blaze'
+        return 'Jones'
     } else if (lastLetter === 'o'){
-        return 'Thorn'
+        return 'Adler'
     } else if (lastLetter === 'u'){
-        return 'Frost'
+        return 'Gold'
     } else{
-        return 'Moon'
+        return 'Wilson'
     }
 }
 //generate suffix 
