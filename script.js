@@ -68,8 +68,13 @@ const roadType = document.getElementById('roadType').value
 const favoriteColor = document.getElementById('favoriteColor').value.trim()
 const favoriteAnimal = document.getElementById('favoriteAnimal').value.trim()
 
-
-
+if (!firstName && !lastName && !favoriteColor && !favoriteAnimal) {
+    document.getElementById('result').textContent = 'All fields are empty. Please provide inputs.';
+    return;
+  } else if (!firstName || !lastName || !roadType || !favoriteColor || !favoriteAnimal) {
+    document.getElementById('result').textContent = 'Some fields are missing. Please fill out all fields.';
+    return;
+  }
 //Generate Each part of the name using helper funcions
 const prefix = genPrefix(firstName)
 const newFirstName = genFirstName(firstName)
