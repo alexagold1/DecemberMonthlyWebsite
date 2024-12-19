@@ -11,18 +11,35 @@ function genPrefix (firstName){
 //Generate First name of name
 function genFirstName (firstName){
   const firstLetter = firstName.charAt(0).toLowerCase()
-  if (firstLetter === 'a') {
+  switch (firstLetter) {
+    case 'a': 
     return 'Jeff'
-  } else if  (firstLetter === 'b') {
+    break;
+    case 'b': 
     return 'Joe'
-  } else if  (firstLetter === 'c'){
+    break;
+    case 'c': 
     return 'Chris'
-  }  else if  (firstLetter === 'd'){
+    break;
+    case 'd': 
     return 'Dom'
-  } else {
-    return 'Zach'
+    break;
+    default:
+      return 'Zach'
+      break;
   }
 }
+
+//  } else if  (firstLetter === 'b') {
+//     return 'Joe'
+//   } else if  (firstLetter === 'c'){
+//     return 'Chris'
+//   }  else if  (firstLetter === 'd'){
+//     return 'Dom'
+//   } else {
+//     return 'Zach'
+//   }
+// }
 
 //generate middle name 
 function genMiddleName (roadType, favoriteColor){
